@@ -96,7 +96,6 @@ public class HttpClientService
                     return new Result<T>(default, response.StatusCode, $"Error al deserializar: {ex.Message}");
                 }
             }
-
             return new Result<T>(data, response.StatusCode, null);
         }
         else
